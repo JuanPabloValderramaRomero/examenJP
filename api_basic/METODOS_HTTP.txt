@@ -1,0 +1,33 @@
+METODOS HTTP PARA LOS ENDPOINTS
+Base URL: http://localhost:3000/api_v1
+
+===============================================
+MODULES (/modules)
+===============================================
+GET    /modules        - Listar todos los módulos
+POST   /modules        - Crear nuevo módulo
+GET    /modules/:id    - Obtener módulo por ID
+PUT        - Actualizar módulo
+DELETE /modules/:id    - Eliminar módulo
+
+===============================================
+ROLE MODULE (/roleModule)
+===============================================
+GET    /roleModule                  - Listar todas las relaciones
+POST   /roleModule                  - Crear relación rol-módulo
+GET    /roleModule/:id             - Obtener relación por ID
+PUT    /roleModule/:id             - Actualizar relación
+DELETE /roleModule/:id             - Eliminar relación
+GET    /roleModule/byRole/:roleId  - Obtener módulos de un rol
+
+===============================================
+PROFILE (/profile)
+===============================================
+GET    /profile                       - Ver mi perfil
+PUT    /profile                       - Actualizar mi perfil
+GET    /profile/:id                   - Ver perfil por ID
+PUT    /profile/:id                   - Actualizar perfil por ID
+GET    /profile/permissions/:id       - Ver permisos de usuario
+GET    /profile/permissions           - Ver mis permisos
+POST   /profile/changePassword        - Cambiar mi contraseña
+POST   /profile/changePassword/:id    - Cambiar contraseña de usuario
